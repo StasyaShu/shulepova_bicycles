@@ -3,3 +3,10 @@
 @import "general/normilize.scss";
 @import "general/fonts.scss";
 @import "general/variables.scss";
+@import "general/global.scss";
+
+// Blocks
+
+@import "blocks/page.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
