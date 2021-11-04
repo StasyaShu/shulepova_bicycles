@@ -5,9 +5,18 @@ $black-input: #1C1C1C;
 $black-title: #1F1F1F;
 $black-btn-play: #070707;
 $black: #000000;
+$black-pale: rgba(0, 0, 0, 0.3);
 $grey-input-border: #C9CCD4;
 $grey-bg: #F6F7F9;
 $grey-bg-modal: #F6F6F6;
 $grey-dark-bg: #131314;
 $grey-dark-text-modal: #48494D;
 $mint: #0AD9C6;
+$mint-pale: rgba(10, 217, 198, 0.3);
+$mint-dark: #08ae9e;
+$mint-total-dark: #218b7f;
+$close-button: rgba(20, 21, 23, 0.2);
+
+// - мобильная версия — 320px - 767px;
+// - планшетная версия — 768px - 1023px;
+// - десктопная версия — от 1024px и выше

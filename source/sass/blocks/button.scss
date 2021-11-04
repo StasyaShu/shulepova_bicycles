@@ -1,0 +1,18 @@
+.button {
+  border-radius: 5px;
+  border: none;
+  background-color: $mint;
+  font-size: 15px;
+  line-height: 21px;
+  color: $black;
+  @include opensans-semibold;
+
+  &:hover {
+    background-color: $mint-dark;
+  }
+
+  &:active {
+    color: $black-pale;
+    background-color: $mint-total-dark;
+  }
+}

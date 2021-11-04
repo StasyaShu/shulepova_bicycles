@@ -1,0 +1,56 @@
+.client-data {
+  width: 100%;
+  margin: 0;
+  padding: 70px 0 0;
+  display: flex;
+  flex-direction: column;
+
+  input {
+    width: 100%;
+    border: 1px solid $grey-input-border;
+    border-radius: 5px;
+    padding: 15px 36px;
+
+    &:hover {
+      border: 1px solid $black-input;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    width: 75%;
+  }
+}
+
+.client-data__description {
+  display: block;
+  margin: 0 0 27px;
+  padding: 0;
+  font-size: 17px;
+  line-height: 28px;
+  color: $white;
+  @include opensans-semibold;
+  text-align: center;
+
+  @media (max-width: 1023px) {
+    font-size: 18px;
+    line-height: 28px;
+    color: $black;
+  }
+}
+
+.client-data__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.client-data__item {
+  margin-bottom: 24px;
+}
+
+.client-data__submit-button {
+  display: block;
+  margin: 0;
+  padding: 15px 5px;
+  cursor: pointer;
+}

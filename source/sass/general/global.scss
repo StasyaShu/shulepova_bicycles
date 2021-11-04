@@ -25,3 +25,10 @@ a {
 *::after {
   box-sizing: border-box;
 }
+
+::placeholder {
+  font-size: 15px;
+  line-height: 24px;
+  color: $black-input;
+  opacity: 0.5;
+}

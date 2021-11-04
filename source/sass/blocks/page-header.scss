@@ -1,8 +1,69 @@
 .page-header__wrapper {
   width: 100%;
   padding: 2% 19%;
+  margin: 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-image: url("../img/bike-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-height: 825px;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bike-desktop@2x.jpg");
+    }
+
+    @media (max-width: 1023px) {
+      background-image: url("../img/bike-tablet@1x.jpg");
+      min-height: 340px;
+    }
+
+    @media (max-width: 1023px) and (min-resolution: 2dppx) {
+      background-image: url("../img/bike-tablet@2x.jpg");
+      min-height: 340px;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    padding: 0;
+  }
 }
 
 .page-header__logo {
   display: none;
+
+  @media (max-width: 1023px) {
+    display: block;
+    cursor: pointer;
+    fill: $mint;
+    padding-left: 2%;
+  }
+
+  &:hover {
+
+    @media (max-width: 1023px) {
+      fill: $white;
+    }
+  }
+
+  &:active {
+
+    @media (max-width: 1023px) {
+      fill: $mint-pale;
+    }
+  }
 }
