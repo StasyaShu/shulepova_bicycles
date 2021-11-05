@@ -26,6 +26,39 @@
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
+
+  &:hover {
+
+    .contacts__details {
+      color: $mint-total-dark;
+      opacity: 1;
+    }
+
+    .contacts__icon {
+      fill: $mint-total-dark;
+      stroke: $mint-total-dark;
+
+      &--phone {
+        fill: none;
+      }
+    }
+  }
+
+  &:active {
+
+    .contacts__details {
+      color: $mint-dark;
+    }
+
+    .contacts__icon {
+      fill: $mint-dark;
+      stroke: $mint-dark;
+
+      &--phone {
+        fill: none;
+      }
+    }
+  }
 }
 
 .contacts__details {

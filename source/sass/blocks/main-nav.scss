@@ -70,9 +70,22 @@
   }
 }
 
+.main-nav--closed .main-nav__toggle:hover {
+  background-color: $mint-dark;
+}
+
+.main-nav--closed .main-nav__toggle:active {
+  background-color: $mint-total-dark;
+}
+
 .main-nav--closed .main-nav__toggle:hover::before {
   background-color: $white;
   box-shadow: 0 8px 0 0 $white, 0 16px 0 0 $white;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: $black-pale;
+  box-shadow: 0 8px 0 0 $black-pale, 0 16px 0 0 $black-pale;
 }
 
 .main-nav--opened .main-nav__toggle {

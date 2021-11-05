@@ -32,6 +32,16 @@
       background-image: url("../img/bike-tablet@2x.jpg");
       min-height: 340px;
     }
+
+    @media (max-width: 767px) {
+      background-image: url("../img/bike-mobile@1x.jpg");
+      min-height: 390px;
+    }
+
+    @media (max-width: 767px) and (min-resolution: 2dppx) {
+      background-image: url("../img/bike-mobile@2x.jpg");
+      min-height: 390px;
+    }
   }
 
   @media (max-width: 1023px) {
@@ -57,14 +67,14 @@
   &:hover {
 
     @media (max-width: 1023px) {
-      fill: $white;
+      fill: $mint-dark;
     }
   }
 
   &:active {
 
     @media (max-width: 1023px) {
-      fill: $mint-pale;
+      fill: $mint-total-dark;
     }
   }
 }

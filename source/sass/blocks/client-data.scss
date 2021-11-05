@@ -10,6 +10,7 @@
     border: 1px solid $grey-input-border;
     border-radius: 5px;
     padding: 15px 36px;
+    @include opensans-regular;
 
     &:hover {
       border: 1px solid $black-input;
