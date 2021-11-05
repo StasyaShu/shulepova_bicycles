@@ -23,6 +23,11 @@
     padding: 0;
     width: 65%;
   }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 2% 5%;
+  }
 }
 
 .promo__title {
@@ -88,4 +93,8 @@
 .promo__form {
   grid-row: 1 / -1;
   grid-column: 2 / 3;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 }
