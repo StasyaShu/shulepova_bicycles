@@ -119,18 +119,24 @@
     </section>
     <section class="video">
       <div class="video__wrapper">
+        <a name="video"></a>
         <h2 class="video__title">Видео про велосипеды</h2>
         <p class="video__description">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
-        <picture>
-          <source type="image/webp" media="(max-width: 767px)" srcset="img/bike-video-mobile@1x.webp 1x, img/bike-video-mobile@2x.webp 2x">
-          <source type="image/webp" media="(max-width: 1023px)" srcset="img/bike-video-tablet@1x.webp 1x, img/bike-video-tablet@2x.webp 2x">
-          <img class="video__image" src="img/bike-video-desktop@1x.jpg" srcset="img/bike-video-desktop@2x.jpg 2x" width="929" height="522" alt="Изображение профессионального велосипеда">
-        </picture>
-        <button class="video__button button button--play" type="button"><span class="visually-hidden">Проигрывать видео</span></button>
+        <div class="video__container">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/bike-video-mobile@1x.webp 1x, img/bike-video-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/bike-video-tablet@1x.webp 1x, img/bike-video-tablet@2x.webp 2x">
+            <img class="video__image" src="img/bike-video-desktop@1x.jpg" srcset="img/bike-video-desktop@2x.jpg 2x" width="929" height="522" alt="Изображение профессионального велосипеда">
+          </picture>
+          <button class="video__button button button--play" type="button">
+            <span class="visually-hidden">Проигрывать видео</span>
+          </button>
+        </div>
       </div>
     </section>
     <section class="location">
       <div class="location__wrapper">
+        <a name="contacts"></a>
         <h2 class="location__title">Как нас найти?</h2>
         <p class="location__address">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
         <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5903.258799302129!2d30.315103918590772!3d59.93827614018648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1636100942487!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -142,16 +148,16 @@
       <ul class="contacts">
         <li class="contacts__item">
           <a class="contacts__link" href="mailto:puteshestviemechta@gmail.ru" aria-label="ссылка-электронный адрес почты компании Moon">
-            <svg class="contacts__icon contacts__icon--email" width="26" height="20" viewbox="0 0 26 20">
-              <use xlink:href="img/sprite.svg#email"></use>
+            <svg class="contacts__icon contacts__icon--email" width="26" height="21" viewBox="0 0 26 21" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24.2273 0.117676H1.77273C0.768182 0.117676 0 0.882382 0 1.88238V18.353C0 19.353 0.768182 20.1177 1.77273 20.1177H24.2273C25.2318 20.1177 26 19.353 26 18.353V1.88238C26 0.882382 25.2318 0.117676 24.2273 0.117676ZM24.2273 17.1177L19.5591 12.4706C19.2045 12.1177 18.6727 12.1177 18.3182 12.4706C17.9636 12.8236 17.9636 13.353 18.3182 13.7059L22.9864 18.353H3.01362L7.68182 13.7059C8.03636 13.353 8.03636 12.8236 7.68182 12.4706C7.32727 12.1177 6.79547 12.1177 6.44092 12.4706L1.77273 17.1177V5.82353L12.4091 13.8236C12.5864 13.9412 12.7637 14 12.9409 14C13.1182 14 13.2954 13.9412 13.4727 13.8236L24.2273 5.82353V17.1177ZM24.2273 1.88238V3.58828L12.9409 11.9412L1.77273 3.58828V1.88238H24.2273Z"></path>
             </svg>
             <span class="contacts__details contacts__details--email">puteshestviemechta@gmail.ru</span>
           </a>
         </li>
         <li class="contacts__item">
           <a class="contacts__link" href="tel:+749978468446" aria-label="телефон компании Moon">
-            <svg class="contacts__icon contacts__icon--phone" width="22" height="23" viewbox="0 0 22 23">
-              <use xlink:href="img/sprite.svg#phone"></use>
+            <svg class="contacts__icon contacts__icon--phone" width="17" height="24" viewBox="0 0 17 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.45616 6.74199C1.37161 5.54391 1.63734 4.36374 2.34096 3.41452C2.95096 2.554 3.74517 2.08404 4.70245 1.8094C5.50874 1.57018 6.03721 1.86329 6.26974 2.75972C6.60192 4.09991 7.07604 5.44018 7.24817 6.85129C7.30253 7.47252 6.90089 8.35089 6.46604 8.80328C5.37589 9.87655 5.60238 10.6576 6.42982 12.282C6.6865 12.8057 7.09418 13.7111 7.88839 14.9096C8.71583 16.1169 9.1537 16.7649 10.2167 16.2152C11.3974 15.6212 12.2581 16.0032 13.1489 16.9621C13.7529 17.6546 14.4172 18.2495 15.0212 18.942C15.8939 19.9718 15.8547 20.6818 15.1722 21.4091C13.9431 22.7486 11.9138 23.1913 10.4039 22.2943C9.57045 21.8058 8.74 21.1664 8.07866 20.4206C5.16453 17.1002 3.06272 13.2388 1.79741 8.88089C1.59508 8.14421 1.50146 7.39872 1.45616 6.74199Z"></path>
             </svg>
             <span class="contacts__details contacts__details--phone">+7&nbsp;(499)&nbsp;-784-684-46</span>
           </a>

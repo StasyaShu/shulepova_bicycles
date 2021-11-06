@@ -4,6 +4,7 @@
 
   @media (max-width: 1023px) {
     overflow: hidden;
+    padding: 6% 0;
   }
 }
 
@@ -26,11 +27,12 @@
   color: $black-title;
   @include opensans-semibold;
   text-align: center;
-  margin: 0 0 75px;
+  margin: 0 0 80px;
   padding: 0;
 
   @media (max-width: 1023px) {
     font-size: 24px;
     line-height: 41px;
+    margin: 0 0 54px;
   }
 }

@@ -1,17 +1,16 @@
 .location {
   margin: 0 0 25px;
-  padding: 10% 0 0;
 }
 
 .location__wrapper {
   width: 100%;
-  padding: 19% 19% 0;
+  padding: 0 19%;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @media (max-width: 1023px) {
-    padding: 19% 5% 0;
+    padding: 0 5%;
   }
 
   @media (max-width: 767px) {

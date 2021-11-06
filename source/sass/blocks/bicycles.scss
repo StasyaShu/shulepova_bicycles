@@ -17,6 +17,10 @@
 
 .bicycles__item {
 
+  &:not(:last-child) {
+    margin-right: 23px;
+  }
+
   &--city {
     position: relative;
     z-index: 1;
