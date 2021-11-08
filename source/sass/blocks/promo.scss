@@ -79,15 +79,23 @@
     text-align: center;
     font-size: 18px;
     line-height: 32px;
-    margin: 0 0 135px;
+    margin: 0;
+    max-width: 70%;
   }
 }
 
 .promo__form {
   grid-row: 1 / -1;
   grid-column: 2 / 3;
+  margin: 0;
+  padding: 70px 0 0;
+
+  @media (max-width: 1023px) {
+    padding: 170px 0 0;
+  }
 
   @media (max-width: 767px) {
     width: 100%;
+    padding: 185px 0 0;
   }
 }
