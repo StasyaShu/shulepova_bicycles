@@ -23,7 +23,7 @@
           <rect x="37" y="3" width="6" height="4"></rect>
         </svg>
       </a>
-      <nav class="main-nav main-nav--opened main-nav--nojs">
+      <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -52,15 +52,15 @@
       <div class="promo__wrapper">
         <h2 class="promo__title">Мы продаем велосипеды</h2>
         <p class="promo__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
-        <form class="promo__form client-data" action="https://echo.htmlacademy.ru" method="get">
+        <form class="promo__form client-data" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data" autocomplete="off">
           <p class="client-data__description">Заполните поля ниже и мы подберем&nbsp;велосипед Вашей мечты</p>
           <ul class="client-data__list">
             <li class="client-data__item">
-              <input type="text" name="name" id="name-id" placeholder="Введите Ваше Имя">
+              <input type="text" name="name" id="name-id" placeholder="Введите Ваше Имя" required="">
               <label class="visually-hidden" for="name-id">Имя клиента</label>
             </li>
             <li class="client-data__item">
-              <input type="tel" name="tel" id="tel-id" placeholder="Введите Ваш номер телефона">
+              <input type="tel" name="tel" id="tel-id" placeholder="Введите Ваш номер телефона" max="25" required="">
               <label class="visually-hidden" for="tel-id">Телефон клиента</label>
             </li>
           </ul>
@@ -165,7 +165,7 @@
       </ul>
     </div>
   </footer>
-  <script src="js/main.min.js"></script>
+  <script src="js/main.js" type="module"></script>
 </body>
 
 </html>
