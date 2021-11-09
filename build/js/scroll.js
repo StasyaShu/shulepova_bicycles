@@ -1,7 +1,7 @@
-import {ANCHORS} from './data.js';
+import {anchors} from './data.js';
 
 const scrollToAnchor = () => {
-  for (let anchor of ANCHORS) {
+  for (let anchor of anchors) {
     anchor.addEventListener('click', function (e) {
       e.preventDefault()
 

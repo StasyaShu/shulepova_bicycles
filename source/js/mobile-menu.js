@@ -1,10 +1,10 @@
-import {siteNavigation, siteNavigationToggle} from './data.js';
+import {SITE_NAVIGATION, SITE_NAVIGATION_TOGGLE} from './data.js';
 
 const showNav = () => {
-  siteNavigationToggle.addEventListener('click', function () {
+  SITE_NAVIGATION_TOGGLE.addEventListener('click', function () {
     evt.preventDefault();
-    if(siteNavigation.contains('main-nav--closed')) {
-      siteNavigation.classList.toggle('main-nav--opened');
+    if(SITE_NAVIGATION.contains('main-nav--closed')) {
+      SITE_NAVIGATION.classList.toggle('main-nav--opened');
     }
   });
 };
