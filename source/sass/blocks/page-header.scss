@@ -1,7 +1,4 @@
-.page-header__wrapper {
-  width: 100%;
-  padding: 2% 19%;
-  margin: 0;
+.page-header {
   position: relative;
 
   &::before {
@@ -43,6 +40,12 @@
       min-height: 390px;
     }
   }
+}
+
+.page-header__wrapper {
+  width: 100%;
+  padding: 2% 19%;
+  margin: 0;
 
   @media (max-width: 1023px) {
     display: flex;
