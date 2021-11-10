@@ -46,7 +46,6 @@ INPUT_NAME.addEventListener('invalid', () => {
 });
 
 INPUT_TEL.addEventListener('invalid', () => {
-  console.log();
   if (INPUT_TEL.validity.patternMismatch) {
     INPUT_TEL.setCustomValidity('Номер телефона должен быть в формате: +7-ххх-ххх-хх-хх');
   } else if (INPUT_TEL.validity.valueMissing) {

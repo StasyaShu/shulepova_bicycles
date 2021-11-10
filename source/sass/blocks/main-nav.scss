@@ -233,4 +233,8 @@
     opacity: 1;
     @include opensans-regular;
   }
+
+  &--active {
+    color: $mint-dark;
+  }
 }

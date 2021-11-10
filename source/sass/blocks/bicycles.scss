@@ -17,6 +17,10 @@
 
 .bicycles__item {
 
+  img {
+    background-color: $grey-dark-text-modal;
+  }
+
   &:not(:last-child) {
     margin-right: 23px;
   }
