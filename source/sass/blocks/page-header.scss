@@ -76,17 +76,10 @@
   }
 
   &:hover {
-
-    @media (max-width: 1023px) {
-
-      fill: $mint-dark;
-    }
+    fill: $mint-dark;
   }
 
   &:active {
-
-    @media (max-width: 1023px) {
-      fill: $mint-total-dark;
-    }
+    fill: $mint-total-dark;
   }
 }

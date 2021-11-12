@@ -1,22 +1,21 @@
-const ANCHORS = document.querySelectorAll('a[href*="#"]');
-const SITE_NAVIGATION = document.querySelector('.main-nav');
-const SITE_NAVIGATION_TOGGLE = document.querySelector('.main-nav__toggle');
-const INPUT_NAME = document.getElementById('name-id');
-const INPUT_TEL = document.getElementById('tel-id');
+const anchors = document.querySelectorAll('a[href*="#"]');
+const siteNavigation = document.querySelector('.main-nav');
+const siteNavigationToggle = document.querySelector('.main-nav__toggle');
+const inputName = document.getElementById('name-id');
+const inputTel = document.getElementById('tel-id');
 
 
-const showNav = () => {
-  SITE_NAVIGATION_TOGGLE.addEventListener('click', (evt) => {
+const showNav = (() => {
+  siteNavigationToggle.addEventListener('click', (evt) => {
     evt.preventDefault();
-    SITE_NAVIGATION.classList.toggle('main-nav--opened');
-    SITE_NAVIGATION.classList.toggle('main-nav--closed');
+    siteNavigation.classList.toggle('main-nav--opened');
+    siteNavigation.classList.toggle('main-nav--closed');
   });
-};
-
+})();
 showNav();
 
-const scrollToAnchor = () => {
-  for (let anchor of ANCHORS) {
+const scrollToAnchor = (() => {
+  for (let anchor of anchors) {
     anchor.addEventListener('click', function (e) {
       e.preventDefault()
 
@@ -28,29 +27,28 @@ const scrollToAnchor = () => {
       })
     })
   }
-};
-
+})();
 scrollToAnchor();
 
 
-INPUT_NAME.addEventListener('invalid', () => {
-  if (INPUT_NAME.validity.tooShort) {
-    INPUT_NAME.setCustomValidity('Введите пожалуйста минимум 2 символа');
-  } else if (INPUT_NAME.validity.tooLong) {
-    INPUT_NAME.setCustomValidity('Значение не должно превышать 25-ти символов');
-  } else if (INPUT_NAME.validity.valueMissing) {
-    INPUT_NAME.setCustomValidity('Введите пожалуйста Ваше имя');
+inputName.addEventListener('invalid', () => {
+  if (inputName.validity.tooShort) {
+    inputName.setCustomValidity('Введите пожалуйста минимум 2 символа');
+  } else if (inputName.validity.tooLong) {
+    inputName.setCustomValidity('Значение не должно превышать 25-ти символов');
+  } else if (inputName.validity.valueMissing) {
+    inputName.setCustomValidity('Введите пожалуйста Ваше имя');
   } else {
-    INPUT_NAME.setCustomValidity('');
+    inputName.setCustomValidity('');
   }
 });
 
-INPUT_TEL.addEventListener('invalid', () => {
-  if (INPUT_TEL.validity.patternMismatch) {
-    INPUT_TEL.setCustomValidity('Номер телефона должен быть в формате: +7-ххх-ххх-хх-хх');
-  } else if (INPUT_TEL.validity.valueMissing) {
-    INPUT_TEL.setCustomValidity('Введите пожалуйста номер телефона');
+inputTel.addEventListener('invalid', () => {
+  if (inputTel.validity.patternMismatch) {
+    inputTel.setCustomValidity('Номер телефона должен быть в формате: +7-ххх-ххх-хх-хх');
+  } else if (inputTel.validity.valueMissing) {
+    inputTel.setCustomValidity('Введите пожалуйста номер телефона');
   } else {
-    INPUT_TEL.setCustomValidity('');
+    inputTel.setCustomValidity('');
   }
 });

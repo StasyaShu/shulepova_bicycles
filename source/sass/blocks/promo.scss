@@ -25,6 +25,7 @@
   img {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
+    padding: 52px 0 0;
 
     @media (max-width: 1023px) {
       display: none;
@@ -39,7 +40,7 @@
   @include opensans-bold;
   display: block;
   margin: 0 0 30px;
-  padding: 131px 0 0;
+  padding: 122px 0 0;
   width: 100%;
   grid-row: 1 / 2;
   grid-column: 1 / 2;
