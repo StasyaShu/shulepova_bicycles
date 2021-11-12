@@ -1,45 +1,52 @@
 .page-header {
   position: relative;
 
-  &::before {
-    content: "";
+  img {
     position: absolute;
-    display: block;
-    width: 100%;
-    background-image: url("../img/bike-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: top center;
-    min-height: 825px;
-    z-index: -1;
     top: 0;
-    left: 0;
-    background-size: cover;
-    background-color: $grey-dark-bg;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/bike-desktop@2x.jpg");
-    }
-
-    @media (max-width: 1023px) {
-      background-image: url("../img/bike-tablet@1x.jpg");
-      min-height: 340px;
-    }
-
-    @media (max-width: 1023px) and (min-resolution: 2dppx) {
-      background-image: url("../img/bike-tablet@2x.jpg");
-      min-height: 340px;
-    }
-
-    @media (max-width: 767px) {
-      background-image: url("../img/bike-mobile@1x.jpg");
-      min-height: 390px;
-    }
-
-    @media (max-width: 767px) and (min-resolution: 2dppx) {
-      background-image: url("../img/bike-mobile@2x.jpg");
-      min-height: 390px;
-    }
+    z-index: -1;
+    width: 100%;
   }
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   display: block;
+  //   width: 100%;
+  //   background-image: url("../img/bike-desktop@1x.jpg");
+  //   background-repeat: no-repeat;
+  //   background-position: top center;
+  //   min-height: 825px;
+  //   z-index: -1;
+  //   top: 0;
+  //   left: 0;
+  //   background-size: cover;
+  //   background-color: $grey-dark-bg;
+
+  //   @media (min-resolution: 2dppx) {
+  //     background-image: url("../img/bike-desktop@2x.jpg");
+  //   }
+
+  //   @media (max-width: 1023px) {
+  //     background-image: url("../img/bike-tablet@1x.jpg");
+  //     min-height: 340px;
+  //   }
+
+  //   @media (max-width: 1023px) and (min-resolution: 2dppx) {
+  //     background-image: url("../img/bike-tablet@2x.jpg");
+  //     min-height: 340px;
+  //   }
+
+  //   @media (max-width: 767px) {
+  //     background-image: url("../img/bike-mobile@1x.jpg");
+  //     min-height: 390px;
+  //   }
+
+  //   @media (max-width: 767px) and (min-resolution: 2dppx) {
+  //     background-image: url("../img/bike-mobile@2x.jpg");
+  //     min-height: 390px;
+  //   }
+  // }
 }
 
 .page-header__wrapper {
@@ -71,6 +78,7 @@
   &:hover {
 
     @media (max-width: 1023px) {
+
       fill: $mint-dark;
     }
   }
