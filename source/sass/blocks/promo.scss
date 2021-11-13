@@ -5,7 +5,7 @@
   display: grid;
   grid-template-rows: min-content 1fr 1fr;
   grid-template-columns: 1fr 0.8fr;
-  margin-top: 130px;
+  margin-top: 55px;
   grid-column-gap: 70px;
 
   @media (max-width: 1023px) {
@@ -14,12 +14,13 @@
     align-items: center;
     padding: 0 16%;
     width: 100%;
-    margin-top: 90px;
+    margin-top: 80px;
   }
 
   @media (max-width: 767px) {
     width: 100%;
     padding: 2% 5%;
+    margin-top: 90px;
   }
 
   img {
@@ -84,11 +85,11 @@
   padding: 70px 0 0;
 
   @media (max-width: 1023px) {
-    padding: 170px 0 0;
+    padding: 165px 0 0;
   }
 
   @media (max-width: 767px) {
     width: 100%;
-    padding: 185px 0 0;
+    padding: 150px 0 0;
   }
 }
