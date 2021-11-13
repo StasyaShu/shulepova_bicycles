@@ -16,58 +16,58 @@
   @media (max-width: 767px) {
     position: relative;
   }
-}
 
-.location__title {
-  font-size: 30px;
-  line-height: 30px;
-  color: $black-title;
-  margin: 0 0 30px;
-  padding: 0;
-  @include opensans-semibold;
-  display: block;
-
-  @media (max-width: 1023px) {
-    font-size: 24px;
+  h2 {
+    font-size: 30px;
     line-height: 30px;
-    margin-bottom: 0 0 20px;
+    color: $black-title;
+    margin: 0 0 30px;
+    padding: 0;
+    @include opensans-semibold;
+    display: block;
+
+    @media (max-width: 1023px) {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 0 0 20px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 18px;
+      line-height: 30px;
+    }
   }
 
-  @media (max-width: 767px) {
-    font-size: 18px;
-    line-height: 30px;
+  p {
+    font-size: 17px;
+    line-height: 31px;
+    color: $black;
+    opacity: 0.7;
+    @include opensans-regular;
+    margin: 0 0 42px;
+    padding: 0;
+    display: block;
+    text-align: center;
+    max-width: 65%;
+
+    @media (max-width: 1023px) {
+      margin: 0 0 20px;
+      max-width: 100%;
+    }
+
+    @media (max-width: 767px) {
+      margin: 0 0 500px;
+    }
   }
-}
 
-.location__address {
-  font-size: 17px;
-  line-height: 31px;
-  color: $black;
-  opacity: 0.7;
-  @include opensans-regular;
-  margin: 0 0 42px;
-  padding: 0;
-  display: block;
-  text-align: center;
-  max-width: 65%;
+  iframe {
+    background-color: $grey-bg-map;
+    width: 100%;
 
-  @media (max-width: 1023px) {
-    margin: 0 0 20px;
-    max-width: 100%;
-  }
-
-  @media (max-width: 767px) {
-    margin: 0 0 500px;
-  }
-}
-
-.location__map {
-  background-color: $grey-bg-map;
-  width: 100%;
-
-  @media (max-width: 767px) {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    @media (max-width: 767px) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
   }
 }

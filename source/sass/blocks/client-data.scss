@@ -22,37 +22,38 @@
   @media (max-width: 767px) {
     width: 100%;
   }
-}
 
-.client-data__description {
-  display: block;
-  margin: 0 0 27px;
-  padding: 0;
-  font-size: 17px;
-  line-height: 28px;
-  color: $white;
-  @include opensans-semibold;
-  text-align: center;
-
-  @media (max-width: 1023px) {
-    font-size: 18px;
+  p {
+    display: block;
+    margin: 0 0 27px;
+    padding: 0;
+    font-size: 17px;
     line-height: 28px;
-    color: $black;
+    color: $white;
+    @include opensans-semibold;
+    text-align: center;
+
+    @media (max-width: 1023px) {
+      font-size: 18px;
+      line-height: 28px;
+      color: $black;
+      align-self: center;
+    }
   }
-}
 
-.client-data__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
-  @media (max-width: 767px) {
-    width: 100%;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
   }
-}
 
-.client-data__item {
-  margin-bottom: 24px;
+  li {
+    margin-bottom: 24px;
+  }
 }
 
 .client-data__submit-button {

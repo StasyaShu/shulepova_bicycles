@@ -21,7 +21,8 @@
         srcset="img/bike-mobile@1x.webp 1x, img/bike-mobile@2x.webp 2x">
       <source type="image/webp" media="(max-width: 1023px)"
         srcset="img/bike-tablet@1x.webp 1x, img/bike-tablet@2x.webp 2x">
-      <img src="img/bike-desktop@1x.jpg" srcset="img/bike-desktop@2x.jpg 2x" alt="Фоновое изображение горного велосипеда">
+      <img src="img/bike-desktop@1x.jpg" srcset="img/bike-desktop@2x.jpg 2x"
+        alt="Фоновое изображение горного велосипеда">
     </picture>
     <div class="page-header__wrapper">
       <div class="page-header__logo">
@@ -35,20 +36,20 @@
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
+        <ul>
+          <li>
             <a class="main-nav__link main-nav__link--active" href="#about" aria-label="Ссылка на раздел о компании">О
               нас</a>
           </li>
-          <li class="main-nav__item">
+          <li>
             <a class="main-nav__link" href="#types" aria-label="Ссылка на раздел с видами велосипедов">Виды
               велосипедов</a>
           </li>
-          <li class="main-nav__item">
+          <li>
             <a class="main-nav__link" href="#video" aria-label="Ссылка на раздел с видео про велосипеды">Видео про
               велосипеды</a>
           </li>
-          <li class="main-nav__item">
+          <li>
             <a class="main-nav__link" href="#contacts" aria-label="Ссылка на раздел с контактами компании">Контакты</a>
           </li>
         </ul>
@@ -61,18 +62,18 @@
       <div class="promo__wrapper">
         <!-- на всех разрешениях: 1x: 68px*21px -->
         <img src="img/logo.svg" width="68" height="21" alt="Логотип Moon">
-        <h2 class="promo__title">Мы продаем велосипеды</h2>
-        <p class="promo__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+        <h2>Мы продаем велосипеды</h2>
+        <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
         <form class="promo__form client-data" action="https://echo.htmlacademy.ru" method="post"
           enctype="multipart/form-data" autocomplete="off">
-          <p class="client-data__description">Заполните поля ниже и мы подберем&nbsp;велосипед Вашей мечты</p>
-          <ul class="client-data__list">
-            <li class="client-data__item">
+          <p>Заполните поля ниже и мы подберем&nbsp;велосипед Вашей мечты</p>
+          <ul>
+            <li>
               <input type="text" name="name" id="name-id" placeholder="Введите Ваше Имя" pattern="^[А-Яа-яЁёA-za-z\s]+$"
                 required>
               <label class="visually-hidden" for="name-id">Имя клиента</label>
             </li>
-            <li class="client-data__item">
+            <li>
               <input type="tel" name="tel" id="tel-id" placeholder="Введите Ваш номер телефона"
                 pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
               <label class="visually-hidden" for="tel-id">Телефон клиента</label>
@@ -84,18 +85,18 @@
     </section>
     <section class="about-us" id="about">
       <div class="about-us__wrapper">
-        <h2 class="about-us__title">Несколько фактов о нас</h2>
-        <ul class="about-us__description advantages">
-          <li class="advantages__item">
+        <h2>Несколько фактов о нас</h2>
+        <ul>
+          <li>
             <p>Самый широкий выбор велосипедов!</p>
           </li>
-          <li class="advantages__item">
+          <li>
             <p>Доставка велосипедов по всей России!</p>
           </li>
-          <li class="advantages__item">
+          <li>
             <p>Большой выбор крутых аксессуаров!</p>
           </li>
-          <li class="advantages__item">
+          <li>
             <p>Профессиональные консультации!</p>
           </li>
         </ul>
@@ -103,48 +104,48 @@
     </section>
     <section class="goods-types" id="types">
       <div class="goods-types__wrapper">
-        <h2 class="goods-types__title">Виды велосипедов</h2>
-        <ul class="goods-types__list bicycles">
-          <li class="bicycles__item bicycles__item--city">
+        <h2>Виды велосипедов</h2>
+        <ul>
+          <li>
             <!-- desktop: 1x: 342px, 2x: 684px -->
             <!-- tablet & mobile: 1x: 270px, 2x: 540px -->
             <picture>
               <source type="image/webp" media="(max-width: 1023px)"
                 srcset="img/bike-city-mobile@1x.webp 1x, img/bike-city-mobile@2x.webp 2x">
-              <img class="bicycles__image" src="img/bike-city-desktop@1x.jpg" srcset="img/bike-city-desktop@2x.jpg 2x"
-                width="342" height="503" alt="Изображение велосипеда дорожного типа с корзиной">
+              <img src="img/bike-city-desktop@1x.jpg" srcset="img/bike-city-desktop@2x.jpg 2x" width="342" height="503"
+                alt="Изображение велосипеда дорожного типа с корзиной">
             </picture>
-            <p class="bicycles__description">Дорожный велосипед</p>
+            <p>Дорожный велосипед</p>
           </li>
-          <li class="bicycles__item bicycles__item--mount">
+          <li>
             <!-- desktop: 1x: 342px, 2x: 684px -->
             <!-- tablet & mobile: 1x: 270px, 2x: 540px -->
             <picture>
               <source type="image/webp" media="(max-width: 1023px)"
                 srcset="img/bike-mount-mobile@1x.webp 1x, img/bike-mount-mobile@2x.webp 2x">
-              <img class="bicycles__image" src="img/bike-mount-desktop@1x.jpg" srcset="img/bike-mount-desktop@2x.jpg 2x"
-                width="342" height="566" alt="Изображение горного велосипеда">
+              <img src="img/bike-mount-desktop@1x.jpg" srcset="img/bike-mount-desktop@2x.jpg 2x" width="342"
+                height="566" alt="Изображение горного велосипеда">
             </picture>
-            <p class="bicycles__description">Горный велосипед</p>
+            <p>Горный велосипед</p>
           </li>
-          <li class="bicycles__item bicycles__item--kid">
+          <li>
             <!-- desktop: 1x: 342px, 2x: 684px -->
             <!-- tablet & mobile: 1x: 270px, 2x: 540px -->
             <picture>
               <source type="image/webp" media="(max-width: 1023px)"
                 srcset="img/bike-kid-mobile@1x.webp 1x, img/bike-kid-mobile@2x.webp 2x">
-              <img class="bicycles__image" src="img/bike-kid-desktop@1x.jpg" srcset="img/bike-kid-desktop@2x.jpg 2x"
-                width="342" height="513" alt="Изображение детского велосипеда">
+              <img src="img/bike-kid-desktop@1x.jpg" srcset="img/bike-kid-desktop@2x.jpg 2x" width="342" height="513"
+                alt="Изображение детского велосипеда">
             </picture>
-            <p class="bicycles__description">Детский велосипед</p>
+            <p>Детский велосипед</p>
           </li>
         </ul>
       </div>
     </section>
     <section class="video" id="video">
       <div class="video__wrapper">
-        <h2 class="video__title">Видео про велосипеды</h2>
-        <p class="video__description">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+        <h2>Видео про велосипеды</h2>
+        <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
         <div class="video__container">
           <!-- desktop: 1x: 929px, 2x: 1858px -->
           <!-- tablet: 1x: 503px, 2x: 1006px -->
@@ -154,10 +155,10 @@
               srcset="img/bike-video-mobile@1x.webp 1x, img/bike-video-mobile@2x.webp 2x">
             <source type="image/webp" media="(max-width: 1023px)"
               srcset="img/bike-video-tablet@1x.webp 1x, img/bike-video-tablet@2x.webp 2x">
-            <img class="video__image" src="img/bike-video-desktop@1x.jpg" srcset="img/bike-video-desktop@2x.jpg 2x"
-              width="929" height="522" alt="Изображение профессионального велосипеда">
+            <img src="img/bike-video-desktop@1x.jpg" srcset="img/bike-video-desktop@2x.jpg 2x" width="929" height="522"
+              alt="Изображение профессионального велосипеда">
           </picture>
-          <button class="video__button button button--play" type="button">
+          <button class="button button--play" type="button">
             <span class="visually-hidden">Проигрывать видео</span>
           </button>
         </div>
@@ -165,9 +166,9 @@
     </section>
     <section class="location" id="contacts">
       <div class="location__wrapper">
-        <h2 class="location__title">Как нас найти?</h2>
-        <p class="location__address">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-        <iframe class="location__map"
+        <h2>Как нас найти?</h2>
+        <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+        <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5903.258799302129!2d30.315103918590772!3d59.93827614018648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1636100942487!5m2!1sru!2sru"
           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
@@ -175,22 +176,21 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <ul class="contacts">
-        <li class="contacts__item">
-          <a class="contacts__link" href="mailto:puteshestviemechta@gmail.ru"
-            aria-label="ссылка-электронный адрес почты компании Moon">
-            <svg class="contacts__icon contacts__icon--email" width="26" height="21" viewBox="0 0 26 21">
+      <ul>
+        <li>
+          <a href="mailto:puteshestviemechta@gmail.ru" aria-label="ссылка-электронный адрес почты компании Moon">
+            <svg class="page-footer__icon page-footer__icon--email" width="26" height="21" viewBox="0 0 26 21">
               <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
             </svg>
-            <span class="contacts__details contacts__details--email">puteshestviemechta@gmail.ru</span>
+            <span class="page-footer__details page-footer__details--email">puteshestviemechta@gmail.ru</span>
           </a>
         </li>
-        <li class="contacts__item">
-          <a class="contacts__link" href="tel:+749978468446" aria-label="телефон компании Moon">
-            <svg class="contacts__icon contacts__icon--phone" width="17" height="24" viewBox="0 0 17 24">
+        <li>
+          <a href="tel:+749978468446" aria-label="телефон компании Moon">
+            <svg class="page-footer__icon page-footer__icon--phone" width="17" height="24" viewBox="0 0 17 24">
               <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
             </svg>
-            <span class="contacts__details contacts__details--phone">+7&nbsp;(499)&nbsp;-784-684-46</span>
+            <span class="page-footer__details page-footer__details--phone">+7&nbsp;(499)&nbsp;-784-684-46</span>
           </a>
         </li>
       </ul>
