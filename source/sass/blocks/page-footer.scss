@@ -32,14 +32,12 @@
 }
 
 .page-footer__wrapper li:not(:last-child) {
-
   @media (max-width: 767px) {
     margin-bottom: 15px;
   }
 }
 
 .page-footer__wrapper a:hover {
-
   .page-footer__details {
     color: $mint-total-dark;
     opacity: 1;
@@ -56,7 +54,6 @@
 }
 
 .page-footer__wrapper a:active {
-
   .page-footer__details {
     color: $mint-dark;
   }
@@ -75,6 +72,7 @@
   display: block;
   color: $black;
   opacity: 0.5;
+
   @include opensans-regular;
 
   &--email {

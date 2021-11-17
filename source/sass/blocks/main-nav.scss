@@ -40,7 +40,6 @@
 }
 
 .main-nav--opened {
-
   @media (max-width: 1023px) {
     background-color: $white;
     display: flex;
@@ -54,9 +53,7 @@
 }
 
 .main-nav--closed {
-
   @media (max-width: 1023px) {
-
     ul {
       display: none;
     }
@@ -64,7 +61,6 @@
 }
 
 .main-nav--nojs {
-
   @media (max-width: 1023px) {
     background-color: $white;
     width: 100%;
@@ -100,6 +96,7 @@
   line-height: 32px;
   color: $white;
   opacity: 0.7;
+
   @include opensans-light;
   cursor: pointer;
   position: relative;
@@ -110,11 +107,11 @@
     line-height: 140%;
     color: $grey-dark-text-modal;
     opacity: 1;
+
     @include opensans-regular;
   }
 
   &::after {
-
     @media (max-width: 1023px) {
       content: "";
       position: absolute;
@@ -156,7 +153,6 @@
 }
 
 .main-nav--closed .main-nav__toggle::before {
-
   @media (max-width: 1023px) {
     content: "";
     position: absolute;
@@ -189,7 +185,6 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-
   @media (max-width: 1023px) {
     background-color: $white;
     margin-bottom: 30px;
@@ -197,7 +192,6 @@
 }
 
 .main-nav--opened .main-nav__toggle::before {
-
   @media (max-width: 1023px) {
     position: absolute;
     content: "";
@@ -211,7 +205,6 @@
 }
 
 .main-nav--opened .main-nav__toggle::after {
-
   @media (max-width: 1023px) {
     position: absolute;
     content: "";
@@ -225,28 +218,24 @@
 }
 
 .main-nav--opened .main-nav__toggle:hover::before {
-
   @media (max-width: 1023px) {
     background-color: $mint;
   }
 }
 
 .main-nav--opened .main-nav__toggle:hover::after {
-
   @media (max-width: 1023px) {
     background-color: $mint;
   }
 }
 
 .main-nav--opened .main-nav__toggle:active::before {
-
   @media (max-width: 1023px) {
     opacity: 0.5;
   }
 }
 
 .main-nav--opened .main-nav__toggle:active::after {
-
   @media (max-width: 1023px) {
     opacity: 0.5;
   }

@@ -24,6 +24,7 @@
     font-size: 30px;
     line-height: 30px;
     color: $black-title;
+
     @include opensans-semibold;
     text-align: center;
     margin: 0 0 80px;
@@ -69,6 +70,7 @@
     font-size: 22px;
     line-height: 34px;
     color: $black;
+
     @include opensans-semibold;
     display: block;
     text-align: center;
@@ -101,7 +103,7 @@
   }
 }
 
-.goods-types__wrapper li:first-child+li {
+.goods-types__wrapper li:first-child + li {
   padding: 35px 0 0;
   position: relative;
 

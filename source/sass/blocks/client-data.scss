@@ -8,6 +8,7 @@
     border: 1px solid $grey-input-border;
     border-radius: 5px;
     padding: 15px 36px;
+
     @include opensans-regular;
 
     &:hover {
@@ -30,6 +31,7 @@
     font-size: 17px;
     line-height: 28px;
     color: $white;
+
     @include opensans-semibold;
     text-align: center;
 
