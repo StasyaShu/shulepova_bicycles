@@ -1,23 +1,32 @@
-const anchors = document.querySelectorAll('a[href*="#"]');
-const siteNavigation = document.querySelector('.main-nav');
-const promo = document.querySelector('.promo__wrapper');
-const siteNavigationToggle = document.querySelector('.main-nav__toggle');
-const inputName = document.getElementById('name-id');
-const inputTel = document.getElementById('tel-id');
+const loadWindow = (() => {
+  const mainNav = document.querySelector('.main-nav');
+  const promo = document.querySelector('.promo__wrapper');
+  return {
+    removeNojs: () => {
+      mainNav.classList.remove('main-nav--nojs');
+      promo.classList.remove('promo__wrapper--nojs');
+    }
+  }
+})()
+window.addEventListener('load', loadWindow.removeNojs());
 
-const showNav = (() => {
-  if (siteNavigation && siteNavigationToggle) {
+(function showNav() {
+  const siteNavigation = document.querySelector('.main-nav');
+  const siteNavigationToggle = document.querySelector('.main-nav__toggle');
+  if (siteNavigationToggle) {
+    siteNavigationToggle.classList.remove('main-nav__toggle--hidden');
+    siteNavigation.classList.add('main-nav--closed');
+
     siteNavigationToggle.addEventListener('click', (evt) => {
-      evt.preventDefault()
-      siteNavigation.classList.toggle('main-nav--opened')
-      siteNavigation.classList.toggle('main-nav--closed')
+      evt.preventDefault();
+      siteNavigation.classList.toggle('main-nav--opened');
+      siteNavigation.classList.toggle('main-nav--closed');
     })
   }
-  siteNavigation.classList.add('main-nav--nojs')
-  promo.classList.add('promo__wrapper--nojs')
 })();
 
-const scrollToAnchor = (() => {
+(function scrollToAnchor() {
+  const anchors = document.querySelectorAll('a[href*="#"]');
   for (let anchor of anchors) {
     anchor.addEventListener('click', function (e) {
       e.preventDefault()
@@ -32,7 +41,8 @@ const scrollToAnchor = (() => {
   }
 })();
 
-const validateName = (() => {
+(function validateName() {
+  const inputName = document.getElementById('name-id');
   inputName.addEventListener('invalid', () => {
     if (inputName.validity.tooShort) {
       inputName.setCustomValidity('Введите пожалуйста минимум 2 символа');
@@ -48,7 +58,8 @@ const validateName = (() => {
   })
 })();
 
-const validateTel = (() => {
+(function validateTel() {
+  const inputTel = document.getElementById('tel-id');
   inputTel.addEventListener('invalid', () => {
     if (inputTel.validity.patternMismatch) {
       inputTel.setCustomValidity('Номер телефона должен быть в формате: +7-ххх-ххх-хх-хх');

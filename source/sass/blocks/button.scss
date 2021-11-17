@@ -17,59 +17,59 @@
     color: $black-pale;
     background-color: $mint-total-dark;
   }
+}
 
-  &--play {
+.button--play {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: $mint;
+  cursor: pointer;
+  position: relative;
+
+  &:active {
+    box-shadow: 0 0 5px 2px $white;
+  }
+
+  @media (max-width: 1023px) {
+    width: 90px;
+    height: 90px;
+  }
+
+  @media (max-width: 767px) {
     width: 65px;
     height: 65px;
-    border-radius: 50%;
-    background-color: $mint;
-    cursor: pointer;
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 23px;
-      left: 27px;
-      width: 0;
-      height: 0;
-      border-top: 10px solid transparent;
-      border-left: 15px solid $black-btn-play;
-      border-bottom: 10px solid transparent;
-
-      @media (max-width: 1023px) {
-        border-top: 13px solid transparent;
-        border-left: 18px solid $black-btn-play;
-        border-bottom: 13px solid transparent;
-        top: 33px;
-        left: 39px;
-      }
-
-      @media (max-width: 767px) {
-        top: 23px;
-        left: 27px;
-        border-top: 10px solid transparent;
-        border-left: 15px solid $black-btn-play;
-        border-bottom: 10px solid transparent;
-      }
-    }
-
-    &:hover::before {
-      border-left: 15px solid $white;
-    }
-
-    &:active {
-      box-shadow: 0 0 5px 2px $white;
-    }
-
-    @media (max-width: 1023px) {
-      width: 90px;
-      height: 90px;
-    }
-
-    @media (max-width: 767px) {
-      width: 65px;
-      height: 65px;
-    }
   }
+}
+
+.button--play::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 27px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-left: 15px solid $black-btn-play;
+  border-bottom: 10px solid transparent;
+
+  @media (max-width: 1023px) {
+    border-top: 13px solid transparent;
+    border-left: 18px solid $black-btn-play;
+    border-bottom: 13px solid transparent;
+    top: 33px;
+    left: 39px;
+  }
+
+  @media (max-width: 767px) {
+    top: 23px;
+    left: 27px;
+    border-top: 10px solid transparent;
+    border-left: 15px solid $black-btn-play;
+    border-bottom: 10px solid transparent;
+  }
+}
+
+.button--play:hover::before {
+  border-left: 15px solid $white;
 }

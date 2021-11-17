@@ -27,43 +27,43 @@
   @media (max-width: 767px) {
     padding: 0 6%;
   }
+}
 
-  h2 {
-    font-size: 30px;
+.video__wrapper h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: $white;
+
+  @include opensans-semibold;
+  margin: 0 0 20px;
+  padding: 0;
+  text-align: center;
+
+  @media (max-width: 1023px) {
+    font-size: 24px;
     line-height: 30px;
-    color: $white;
-
-    @include opensans-semibold;
-    margin: 0 0 20px;
-    padding: 0;
-    text-align: center;
-
-    @media (max-width: 1023px) {
-      font-size: 24px;
-      line-height: 30px;
-    }
   }
+}
 
-  p {
+.video__wrapper p {
+  font-size: 16px;
+  line-height: 28px;
+  color: $white;
+  opacity: 0.7;
+
+  @include opensans-light;
+  margin: 0;
+  padding: 0 25%;
+  text-align: center;
+
+  @media (max-width: 1023px) {
     font-size: 16px;
     line-height: 28px;
-    color: $white;
-    opacity: 0.7;
+    padding: 0 15%;
+  }
 
-    @include opensans-light;
-    margin: 0;
-    padding: 0 25%;
-    text-align: center;
-
-    @media (max-width: 1023px) {
-      font-size: 16px;
-      line-height: 28px;
-      padding: 0 15%;
-    }
-
-    @media (max-width: 767px) {
-      padding: 0;
-    }
+  @media (max-width: 767px) {
+    padding: 0;
   }
 }
 
@@ -76,23 +76,23 @@
     padding: 0 6%;
     width: 100%;
   }
+}
 
-  img {
-    background-color: $black-input;
+.video__container img {
+  background-color: $black-input;
 
-    @media (max-width: 1023px) {
-      max-width: 503px;
-    }
-
-    @media (max-width: 767px) {
-      width: 100%;
-    }
+  @media (max-width: 1023px) {
+    max-width: 503px;
   }
 
-  button {
-    position: absolute;
-    top: 36%;
-    left: 42%;
-    z-index: 3;
+  @media (max-width: 767px) {
+    width: 100%;
   }
+}
+
+.video__container button {
+  position: absolute;
+  top: 36%;
+  left: 42%;
+  z-index: 3;
 }

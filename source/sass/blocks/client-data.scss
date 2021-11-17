@@ -3,19 +3,6 @@
   display: flex;
   flex-direction: column;
 
-  input {
-    width: 100%;
-    border: 1px solid $grey-input-border;
-    border-radius: 5px;
-    padding: 15px 36px;
-
-    @include opensans-regular;
-
-    &:hover {
-      border: 1px solid $black-input;
-    }
-  }
-
   @media (max-width: 1023px) {
     width: 75%;
   }
@@ -23,39 +10,52 @@
   @media (max-width: 767px) {
     width: 100%;
   }
+}
 
-  p {
-    display: block;
-    margin: 0 0 27px;
-    padding: 0;
-    font-size: 17px;
+.client-data input {
+  width: 100%;
+  border: 1px solid $grey-input-border;
+  border-radius: 5px;
+  padding: 15px 36px;
+
+  @include opensans-regular;
+
+  &:hover {
+    border: 1px solid $black-input;
+  }
+}
+
+.client-data p {
+  display: block;
+  margin: 0 0 27px;
+  padding: 0;
+  font-size: 17px;
+  line-height: 28px;
+  color: $white;
+
+  @include opensans-semibold;
+  text-align: center;
+
+  @media (max-width: 1023px) {
+    font-size: 18px;
     line-height: 28px;
-    color: $white;
-
-    @include opensans-semibold;
-    text-align: center;
-
-    @media (max-width: 1023px) {
-      font-size: 18px;
-      line-height: 28px;
-      color: $black;
-      align-self: center;
-    }
+    color: $black;
+    align-self: center;
   }
+}
 
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.client-data ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
-    @media (max-width: 767px) {
-      width: 100%;
-    }
+  @media (max-width: 767px) {
+    width: 100%;
   }
+}
 
-  li {
-    margin-bottom: 24px;
-  }
+.client-data li {
+  margin-bottom: 24px;
 }
 
 .client-data__submit-button {

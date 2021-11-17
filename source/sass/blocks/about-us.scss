@@ -8,84 +8,84 @@
   @media (max-width: 1023px) {
     padding: 11% 0;
   }
+}
 
-  h2 {
-    font-size: 30px;
-    line-height: 30px;
-    color: $black-title;
+.about-us__wrapper h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: $black-title;
 
-    @include opensans-semibold;
-    margin: 0 0 8%;
+  @include opensans-semibold;
+  margin: 0 0 8%;
 
-    @media (max-width: 1023px) {
-      font-size: 24px;
-      line-height: 41px;
-      margin: 0 0 11%;
-    }
+  @media (max-width: 1023px) {
+    font-size: 24px;
+    line-height: 41px;
+    margin: 0 0 11%;
+  }
+}
+
+.about-us__wrapper p {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  line-height: 34px;
+  color: $black;
+
+  @include opensans-regular;
+
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
+}
+
+.about-us__wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  counter-reset: item;
+
+  @media (max-width: 1023px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 5%;
   }
 
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  @media (max-width: 767px) {
     display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    justify-content: center;
-    counter-reset: item;
-
-    @media (max-width: 1023px) {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      column-gap: 5%;
-    }
-
-    @media (max-width: 767px) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+    flex-direction: column;
+    align-items: center;
   }
+}
 
-  li {
-    max-width: 283px;
-    padding: 50px 4px 0;
-    text-align: center;
-    position: relative;
+.about-us__wrapper li {
+  max-width: 283px;
+  padding: 50px 4px 0;
+  text-align: center;
+  position: relative;
 
-    &::before {
-      counter-increment: item;
-      content: "0"counter(item);
-      position: absolute;
-      font-size: 28px;
-      line-height: 38px;
+  &::before {
+    counter-increment: item;
+    content: "0"counter(item);
+    position: absolute;
+    font-size: 28px;
+    line-height: 38px;
 
-      @include opensans-bold;
-      color: $mint;
-      top: -10px;
-      left: 43%;
-    }
-
-    &:not(:last-child) {
-      @media (max-width: 1023px) {
-        margin: 0 0 15%;
-      }
-    }
+    @include opensans-bold;
+    color: $mint;
+    top: -10px;
+    left: 43%;
   }
+}
 
-  p {
-    display: block;
-    margin: 0;
-    padding: 0;
-    font-size: 22px;
-    line-height: 34px;
-    color: $black;
-
-    @include opensans-regular;
-
-    @media (max-width: 767px) {
-      font-size: 18px;
-    }
+.about-us__wrapper li:not(:last-child) {
+  @media (max-width: 1023px) {
+    margin: 0 0 15%;
   }
 }

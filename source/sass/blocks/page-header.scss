@@ -1,21 +1,21 @@
 .page-header {
   position: relative;
+}
 
-  img {
-    position: absolute;
-    top: 0;
-    z-index: -3;
-    width: 100%;
-    max-height: 825px;
-    background-color: $black-input;
+.page-header img {
+  position: absolute;
+  top: 0;
+  z-index: -3;
+  width: 100%;
+  max-height: 825px;
+  background-color: $black-input;
 
-    @media (max-width: 1023px) {
-      max-height: 340px;
-    }
+  @media (max-width: 1023px) {
+    max-height: 340px;
+  }
 
-    @media (max-width: 1023px) {
-      max-height: 390px;
-    }
+  @media (max-width: 1023px) {
+    max-height: 390px;
   }
 }
 

@@ -1,27 +1,27 @@
 .main-nav {
   position: relative;
+}
 
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
 
-    @media (max-width: 1023px) {
-      flex-direction: column;
-    }
+  @media (max-width: 1023px) {
+    flex-direction: column;
   }
+}
 
-  li {
-    margin: 0 auto;
+.main-nav li {
+  margin: 0 auto;
 
-    @media (max-width: 1023px) {
-      margin: 0 0 40px;
-      background-color: $grey-bg-modal;
-      padding: 15px;
-    }
+  @media (max-width: 1023px) {
+    margin: 0 0 40px;
+    background-color: $grey-bg-modal;
+    padding: 15px;
   }
 }
 
@@ -52,11 +52,9 @@
   }
 }
 
-.main-nav--closed {
+.main-nav--closed ul {
   @media (max-width: 1023px) {
-    ul {
-      display: none;
-    }
+    display: none;
   }
 }
 
@@ -64,11 +62,13 @@
   @media (max-width: 1023px) {
     background-color: $white;
     width: 100%;
+  }
+}
 
-    ul {
-      display: flex;
-      flex-direction: column;
-    }
+.main-nav--nojs ul {
+  @media (max-width: 1023px) {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -91,6 +91,10 @@
   }
 }
 
+.main-nav__toggle--hidden {
+  display: none;
+}
+
 .main-nav__link {
   font-size: 16px;
   line-height: 32px;
@@ -111,21 +115,6 @@
     @include opensans-regular;
   }
 
-  &::after {
-    @media (max-width: 1023px) {
-      content: "";
-      position: absolute;
-      top: 12px;
-      right: 0;
-      width: 7px;
-      height: 7px;
-      border: 2px solid $black-btn-forward;
-      border-top: transparent;
-      border-left: transparent;
-      transform: rotate(-45deg);
-    }
-  }
-
   &:hover {
     color: $mint;
     opacity: 1;
@@ -135,21 +124,36 @@
     color: $mint-pale;
   }
 
-  &:hover::after {
-    border-right: 2px solid $mint;
-    border-bottom: 2px solid $mint;
-    transform: rotate(-45deg);
-  }
-
-  &:active::after {
-    border-right: 2px solid $mint-pale;
-    border-bottom: 2px solid $mint-pale;
-    transform: rotate(-45deg);
-  }
-
   &--active {
     color: $mint-dark;
   }
+}
+
+.main-nav__link::after {
+  @media (max-width: 1023px) {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 0;
+    width: 7px;
+    height: 7px;
+    border: 2px solid $black-btn-forward;
+    border-top: transparent;
+    border-left: transparent;
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav__link:hover::after {
+  border-right: 2px solid $mint;
+  border-bottom: 2px solid $mint;
+  transform: rotate(-45deg);
+}
+
+.main-nav__link:active::after {
+  border-right: 2px solid $mint-pale;
+  border-bottom: 2px solid $mint-pale;
+  transform: rotate(-45deg);
 }
 
 .main-nav--closed .main-nav__toggle::before {

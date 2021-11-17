@@ -9,26 +9,26 @@
   @media (max-width: 1023px) {
     padding: 0 14%;
   }
+}
 
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.page-footer__wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-    @media (max-width: 767px) {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-
-  a {
-    display: flex;
-    flex-wrap: nowrap;
+  @media (max-width: 767px) {
+    flex-direction: column;
     align-items: center;
   }
+}
+
+.page-footer__wrapper a {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .page-footer__wrapper li:not(:last-child) {
