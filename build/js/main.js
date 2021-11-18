@@ -13,6 +13,8 @@ window.addEventListener('load', loadWindow.removeNojs());
 (function showNav() {
   const siteNavigation = document.querySelector('.main-nav');
   const siteNavigationToggle = document.querySelector('.main-nav__toggle');
+  const body = document.querySelector('body');
+
   if (siteNavigationToggle) {
     siteNavigationToggle.classList.remove('main-nav__toggle--hidden');
     siteNavigation.classList.add('main-nav--closed');
@@ -20,6 +22,7 @@ window.addEventListener('load', loadWindow.removeNojs());
     siteNavigationToggle.addEventListener('click', (evt) => {
       evt.preventDefault();
       siteNavigation.classList.toggle('main-nav--opened');
+      body.style.overflow = 'hidden';
       siteNavigation.classList.toggle('main-nav--closed');
     })
   }

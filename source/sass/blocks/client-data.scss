@@ -23,6 +23,10 @@
   &:hover {
     border: 1px solid $black-input;
   }
+
+  &:focus {
+    border: 1px solid $green;
+  }
 }
 
 .client-data p {
