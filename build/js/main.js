@@ -33,10 +33,12 @@ window.addEventListener('load', loadWindow.removeNojs());
 
       const blockID = anchor.getAttribute('href').substr(1);
 
-      document.getElementById(blockID).scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      })
+      if (document.getElementById(blockID)) {
+        document.getElementById(blockID).scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        })
+      }
     })
   }
 })();
