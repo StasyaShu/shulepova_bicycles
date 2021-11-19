@@ -40,6 +40,7 @@
 
   @include opensans-semibold;
   text-align: center;
+  transform: translateY(-13px);
 
   @media (max-width: 1023px) {
     font-size: 18px;
