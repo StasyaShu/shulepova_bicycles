@@ -7,8 +7,8 @@
   align-items: center;
 
   @media (max-width: 1023px) {
-    padding: 100px 0 231px;
-    margin: 0 0 155px;
+    padding: 52px 0 235px;
+    margin: 0 0 157px;
   }
 
   @media (max-width: 767px) {
@@ -95,4 +95,9 @@
   top: 46%;
   left: 46%;
   z-index: 3;
+
+  @media (max-width: 1023px) {
+    top: 34%;
+    left: 41%;
+  }
 }
