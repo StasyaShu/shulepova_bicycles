@@ -31,11 +31,12 @@
 
 .client-data p {
   display: block;
-  margin: 0 0 27px;
+  margin: 0 0 10px;
   padding: 0;
   font-size: 17px;
   line-height: 28px;
   color: $white;
+  width: 100%;
 
   @include opensans-semibold;
   text-align: center;

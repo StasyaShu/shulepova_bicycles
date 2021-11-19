@@ -1,7 +1,7 @@
 .video {
   background-color: $grey-dark-bg;
-  padding: 100px 0 426px;
-  margin: 0 0 213px;
+  padding: 122px 0 482px;
+  margin: 0 0 248px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,7 +53,7 @@
 
   @include opensans-light;
   margin: 0;
-  padding: 0 25%;
+  padding: 0 30%;
   text-align: center;
 
   @media (max-width: 1023px) {
@@ -92,7 +92,7 @@
 
 .video__container button {
   position: absolute;
-  top: 36%;
-  left: 42%;
+  top: 46%;
+  left: 46%;
   z-index: 3;
 }

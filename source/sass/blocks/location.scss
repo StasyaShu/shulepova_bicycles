@@ -51,7 +51,7 @@
   padding: 0;
   display: block;
   text-align: center;
-  max-width: 65%;
+  max-width: 58%;
 
   @media (max-width: 1023px) {
     margin: 0 0 20px;
@@ -66,6 +66,8 @@
 .location__wrapper iframe {
   background-color: $grey-bg-map;
   width: 100%;
+  height: 530px;
+  margin-bottom: 15px;
 
   @media (max-width: 767px) {
     position: absolute;
