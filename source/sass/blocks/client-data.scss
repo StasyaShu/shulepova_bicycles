@@ -47,6 +47,10 @@
     color: $black;
     align-self: center;
   }
+
+  @media (max-width: 767px) {
+    margin-bottom: 17px;
+  }
 }
 
 .client-data ul {

@@ -19,7 +19,7 @@
   @media (max-width: 767px) {
     width: 100%;
     padding: 2% 5%;
-    margin-top: 90px;
+    margin-top: 67px;
   }
 }
 
@@ -53,6 +53,10 @@
     font-size: 30px;
     line-height: 42px;
   }
+
+  @media (max-width: 767px) {
+    margin: 0 0 18px;
+  }
 }
 
 .promo__wrapper p {
@@ -77,6 +81,10 @@
     margin: 0;
     max-width: 75%;
   }
+
+  @media (max-width: 767px) {
+    max-width: 95%;
+  }
 }
 
 .promo__form {
@@ -91,7 +99,7 @@
 
   @media (max-width: 767px) {
     width: 100%;
-    padding: 150px 0 0;
+    padding: 140px 0 0;
   }
 }
 
@@ -115,6 +123,10 @@
     margin: 0;
     max-width: 70%;
     color: $black;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
   }
 }
 

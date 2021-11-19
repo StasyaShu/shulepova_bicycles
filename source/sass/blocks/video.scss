@@ -12,7 +12,8 @@
   }
 
   @media (max-width: 767px) {
-    padding: 100px 0 200px;
+    padding: 85px 0 168px;
+    margin: 0 0 118px;
   }
 }
 
@@ -26,6 +27,10 @@
 
   @media (max-width: 767px) {
     padding: 0 6%;
+  }
+
+  @media (max-width: 767px) {
+    padding: 0 3%;
   }
 }
 
@@ -76,6 +81,10 @@
     padding: 0 6%;
     width: 100%;
   }
+
+  @media (max-width: 767px) {
+    padding: 0 4%;
+  }
 }
 
 .video__container img {
@@ -99,5 +108,10 @@
   @media (max-width: 1023px) {
     top: 34%;
     left: 41%;
+  }
+
+  @media (max-width: 767px) {
+    top: 31%;
+    left: 39%;
   }
 }

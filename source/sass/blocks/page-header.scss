@@ -44,6 +44,10 @@
     padding: 3% 2% 0 3%;
   }
 
+  @media (max-width: 767px) {
+    padding: 6% 2% 0 4%;
+  }
+
   &:hover {
     fill: $mint-dark;
   }

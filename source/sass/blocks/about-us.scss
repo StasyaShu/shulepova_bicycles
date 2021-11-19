@@ -8,6 +8,10 @@
   @media (max-width: 1023px) {
     padding: 9% 0 0;
   }
+
+  @media (max-width: 767px) {
+    padding: 22% 0 0;
+  }
 }
 
 .about-us__wrapper h2 {
@@ -22,7 +26,7 @@
   @media (max-width: 1023px) {
     font-size: 24px;
     line-height: 41px;
-    margin: 0 0 5%;
+    margin: 0 0 12%;
   }
 }
 
@@ -63,6 +67,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 4px;
   }
 }
 
@@ -84,10 +89,18 @@
     top: -10px;
     left: 43%;
   }
+
+  @media (max-width: 767px) {
+    padding: 42px 4px 0;
+  }
 }
 
 .about-us__wrapper li:not(:last-child) {
   @media (max-width: 1023px) {
     margin: 0 0 15%;
+  }
+
+  @media (max-width: 767px) {
+    margin: 0 0 16%;
   }
 }
