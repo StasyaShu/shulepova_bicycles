@@ -24,6 +24,7 @@ window.addEventListener('load', loadWindow.removeNojs());
       siteNavigation.classList.toggle('main-nav--opened');
       body.style.overflow = 'hidden';
       siteNavigation.classList.toggle('main-nav--closed');
+      body.style.overflow = 'scroll';
     })
   }
 })();
