@@ -10,24 +10,47 @@ const loadWindow = (() => {
 })()
 window.addEventListener('load', loadWindow.removeNojs());
 
-(function showNav() {
+const handleMobileMenu = (() => {
   const siteNavigation = document.querySelector('.main-nav');
   const siteNavigationToggle = document.querySelector('.main-nav__toggle');
   const body = document.querySelector('body');
 
-  if (siteNavigationToggle) {
-    siteNavigationToggle.classList.remove('main-nav__toggle--hidden');
-    siteNavigation.classList.add('main-nav--closed');
+  return {
+    showNav: () => {
+      if (siteNavigationToggle) {
+        siteNavigationToggle.classList.remove('main-nav__toggle--hidden');
+        siteNavigation.classList.add('main-nav--closed');
 
-    siteNavigationToggle.addEventListener('click', (evt) => {
-      evt.preventDefault();
-      siteNavigation.classList.toggle('main-nav--opened');
-      body.style.overflow = 'hidden';
-      siteNavigation.classList.toggle('main-nav--closed');
-      body.style.overflow = 'scroll';
-    })
+        siteNavigationToggle.addEventListener('click', (evt) => {
+          evt.preventDefault();
+          siteNavigation.classList.toggle('main-nav--opened');
+          body.style.overflow = 'hidden';
+          siteNavigation.classList.toggle('main-nav--closed');
+          body.style.overflow = 'scroll';
+        })
+      }
+    },
+    clickNavLink: () => {
+      const siteNavigation = document.querySelector('.main-nav');
+      const siteNavigationList = siteNavigation.querySelector('ul');
+      const siteNavigationItems = siteNavigationList.children;
+
+
+      for (const item of siteNavigationItems) {
+        item.addEventListener('click', () => {
+          siteNavigation.classList.remove('main-nav--opened');
+          siteNavigation.classList.add('main-nav--closed');
+          body.style.overflow = 'scroll';
+        })
+      }
+    }
   }
-})();
+})()
+
+handleMobileMenu.showNav();
+handleMobileMenu.clickNavLink();
+
+
 
 (function scrollToAnchor() {
   const anchors = document.querySelectorAll('a[href*="#"]');
