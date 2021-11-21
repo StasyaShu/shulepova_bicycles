@@ -91,7 +91,7 @@ handleMobileMenu.clickNavLink();
   const inputTel = document.getElementById('tel-id');
   inputTel.addEventListener('invalid', () => {
     if (inputTel.validity.patternMismatch) {
-      inputTel.setCustomValidity('Номер телефона должен быть в формате: +7-ххх-ххх-хх-хх');
+      inputTel.setCustomValidity('Номер телефона должен быть в формате: 8-ххх-ххх-хх-хх');
     } else if (inputTel.validity.valueMissing) {
       inputTel.setCustomValidity('Введите пожалуйста номер телефона');
     } else {
