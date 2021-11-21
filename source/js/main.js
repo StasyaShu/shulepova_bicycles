@@ -90,12 +90,23 @@ handleMobileMenu.clickNavLink();
 (function validateTel() {
   const inputTel = document.getElementById('tel-id');
   inputTel.addEventListener('invalid', () => {
-    if (inputTel.validity.patternMismatch) {
-      inputTel.setCustomValidity('Номер телефона должен быть в формате: 8-ххх-ххх-хх-хх');
-    } else if (inputTel.validity.valueMissing) {
+    if (inputTel.validity.valueMissing) {
       inputTel.setCustomValidity('Введите пожалуйста номер телефона');
+    } else if (inputTel.value.length < 10) {
+      inputTel.setCustomValidity('Номер телефона должен содержать 11 цифр, включая +7');
     } else {
       inputTel.setCustomValidity('');
     }
+  })
+})();
+
+(() => {
+  document.addEventListener('DOMContentLoaded', () => {
+
+    const inputTel = document.getElementById('tel-id');
+    const maskOptions = {
+      mask: '+{7}(000)000-00-00'
+    }
+    IMask(inputTel, maskOptions)
   })
 })();
