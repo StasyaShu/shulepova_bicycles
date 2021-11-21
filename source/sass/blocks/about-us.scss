@@ -1,16 +1,16 @@
 .about-us__wrapper {
   width: 100%;
-  padding: 20% 4% 7%;
+  padding: 205px 4% 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @media (max-width: 1023px) {
-    padding: 9% 0 0;
+    padding: 86px 0 0;
   }
 
   @media (max-width: 767px) {
-    padding: 22% 0 0;
+    padding: 110px 0 0;
   }
 }
 
@@ -20,13 +20,13 @@
   color: $black-title;
 
   @include opensans-semibold;
-  margin: 0 0 4%;
+  margin: 0 0 65px;
   transform: translateY(-4px);
 
   @media (max-width: 1023px) {
     font-size: 24px;
     line-height: 41px;
-    margin: 0 0 12%;
+    margin: 0 0 82px;
   }
 }
 
@@ -60,7 +60,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    column-gap: 5%;
+    column-gap: 20px;
   }
 
   @media (max-width: 767px) {

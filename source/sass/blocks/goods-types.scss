@@ -1,14 +1,14 @@
 .goods-types {
   background-color: $grey-bg;
-  padding: 11% 0 8%;
+  padding: 130px 0 100px;
 
   @media (max-width: 1023px) {
     overflow: hidden;
-    padding: 9% 0;
+    padding: 100px 0;
   }
 
   @media (max-width: 767px) {
-    padding: 38% 0 18%;
+    padding: 210px 0 120px;
   }
 }
 
