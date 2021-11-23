@@ -14,7 +14,7 @@
 
 .goods-types__wrapper {
   width: 100%;
-  padding: 1% 14%;
+  padding: 1% 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,9 +52,10 @@
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
-  justify-content: space-between;
+  gap: 34px;
 
   @media (max-width: 1023px) {
     flex-wrap: wrap;
@@ -87,6 +88,11 @@
 
   @include opensans-semibold;
   display: block;
+  text-align: center;
+}
+
+.goods-types__wrapper li {
+  max-width: 342px;
   text-align: center;
 }
 
@@ -180,8 +186,4 @@
     top: -22px;
     right: -23px;
   }
-}
-
-.goods-types__wrapper li:not(:last-child) {
-  margin-right: 23px;
 }
