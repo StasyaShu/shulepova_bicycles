@@ -11,9 +11,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 16%;
+    padding: 0 10%;
     width: 100%;
-    margin-top: 119px;
+    margin-top: 83px;
   }
 
   @media (max-width: 767px) {
@@ -49,10 +49,11 @@
 
   @media (max-width: 1023px) {
     padding: 0;
-    margin: 0 0 25px;
+    margin: 0 0 20px;
     text-align: center;
     font-size: 30px;
     line-height: 42px;
+    transform: translate(-3px, 0);
   }
 
   @media (max-width: 767px) {
@@ -81,6 +82,7 @@
     line-height: 32px;
     margin: 0;
     max-width: 75%;
+    transform: translate(-3px, 0);
   }
 
   @media (max-width: 767px) {
@@ -95,7 +97,7 @@
   padding: 58px 0 0;
 
   @media (max-width: 1023px) {
-    padding: 177px 0 0;
+    padding: 140px 0 0;
   }
 
   @media (max-width: 767px) {

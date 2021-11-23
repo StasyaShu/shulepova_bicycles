@@ -8,7 +8,7 @@
   padding: 0 26%;
 
   @media (max-width: 1023px) {
-    padding: 0 14%;
+    padding: 0 5%;
   }
 }
 
@@ -39,6 +39,10 @@
 .page-footer__wrapper li:not(:last-child) {
   margin-bottom: 15px;
   padding-left: 70px;
+
+  @media (max-width: 1023px) {
+    padding-left: 47px;
+  }
 }
 
 .page-footer__wrapper a:hover {

@@ -14,7 +14,7 @@
     max-height: 340px;
   }
 
-  @media (max-width: 1023px) {
+  @media (max-width: 767px) {
     max-height: 390px;
   }
 }
@@ -41,7 +41,8 @@
     display: block;
     cursor: pointer;
     fill: $mint;
-    padding-left: 10px;
+    padding-left: 12px;
+    transform: translateY(10px);
   }
 
   &:hover {
