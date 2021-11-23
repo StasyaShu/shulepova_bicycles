@@ -137,7 +137,7 @@
   }
 }
 
-.goods-types__wrapper li:first-child+li {
+.goods-types__wrapper li:first-child + li {
   padding: 35px 0 0;
   position: relative;
 
@@ -146,7 +146,7 @@
   }
 }
 
-.goods-types__wrapper li:first-child+li::before {
+.goods-types__wrapper li:first-child + li::before {
   content: "";
   position: absolute;
   top: 15px;
@@ -162,7 +162,7 @@
   }
 }
 
-.goods-types__wrapper li:first-child+li::after {
+.goods-types__wrapper li:first-child + li::after {
   content: "";
   position: absolute;
   bottom: 36px;
