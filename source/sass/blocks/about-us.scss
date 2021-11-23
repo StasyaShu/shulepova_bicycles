@@ -6,7 +6,7 @@
   align-items: center;
 
   @media (max-width: 1023px) {
-    padding: 86px 0 0;
+    padding: 86px 11% 0;
   }
 
   @media (max-width: 767px) {
@@ -88,6 +88,11 @@
     color: $mint;
     top: -10px;
     left: 43%;
+  }
+
+  @media (max-width: 1023px) {
+    width: 75%;
+    justify-self: center;
   }
 
   @media (max-width: 767px) {
