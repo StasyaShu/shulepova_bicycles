@@ -8,7 +8,7 @@
   }
 
   @media (max-width: 767px) {
-    padding: 40px 0 120px;
+    padding: 45px 0 56px;
   }
 }
 
@@ -49,7 +49,8 @@
   }
 
   @media (max-width: 767px) {
-    margin: 0 0 40px;
+    margin: 0 0 34px;
+    transform: translate(-9px, 5px);
   }
 }
 
@@ -73,6 +74,7 @@
 
   @media (max-width: 767px) {
     gap: 36px;
+    transform: translate(-10px, 1px);
   }
 }
 
@@ -127,6 +129,11 @@
     border: 18px solid $mint;
     top: 201px;
     left: -38px;
+  }
+
+  @media (max-width: 767px) {
+    top: 200px;
+    left: -29px;
   }
 }
 

@@ -43,6 +43,17 @@
   @media (max-width: 1023px) {
     padding-left: 47px;
   }
+
+  @media (max-width: 767px) {
+    padding-left: 6px;
+  }
+}
+
+.page-footer__wrapper li:last-child {
+
+  @media (max-width: 767px) {
+    transform: translateX(-5px);
+  }
 }
 
 .page-footer__wrapper a:hover {

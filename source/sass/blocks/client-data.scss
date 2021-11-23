@@ -52,7 +52,8 @@
   }
 
   @media (max-width: 767px) {
-    margin-bottom: 17px;
+    margin-bottom: 9px;
+    transform: translate(1px, 9px);
   }
 }
 
@@ -69,7 +70,8 @@
   }
 
   @media (max-width: 767px) {
-    width: 100%;
+    width: 96%;
+    transform: translate(1px, 18px);
   }
 }
 
@@ -95,6 +97,7 @@
   }
 
   @media (max-width: 767px) {
-    width: 100%;
+    width: 96%;
+    transform: translate(1px, 18px);
   }
 }
