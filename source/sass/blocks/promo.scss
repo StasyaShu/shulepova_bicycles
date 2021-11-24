@@ -33,12 +33,13 @@
 
 .promo__wrapper {
   width: 100%;
-  padding: 0 18%;
+  padding: 0 7%;
   display: grid;
   grid-template-rows: min-content min-content min-content;
-  grid-template-columns: 1fr 0.8fr;
+  grid-template-columns: 0.3fr 0.3fr;
   margin-top: 183px;
   grid-column-gap: 50px;
+  justify-content: center;
 
   @media (max-width: 1023px) {
     display: flex;
