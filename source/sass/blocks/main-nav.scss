@@ -8,7 +8,9 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  opacity: 0.7;
+  align-items: center;
+  justify-content: space-evenly;
 
   @media (max-width: 1023px) {
     flex-direction: column;
@@ -17,6 +19,8 @@
 }
 
 .main-nav li {
+  margin: 0 28px;
+
   @media (max-width: 1023px) {
     margin: 0 0 32px;
     background-color: $grey-bg-modal;
