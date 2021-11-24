@@ -1,11 +1,44 @@
+.promo {
+  background-image: url("../img/bike-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  width: 100%;
+  min-height: 825px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bike-desktop@2x.jpg");
+  }
+
+  @media (max-width: 1023px) {
+    background-image: url("../img/bike-tablet@1x.jpg");
+    min-height: 340px;
+    margin-bottom: 340px;
+  }
+
+  @media (max-width: 1023px) and (min-resolution: 2dppx) {
+    background-image: url("../img/bike-tablet@2x.jpg");
+  }
+
+  @media (max-width: 767px) {
+    background-image: url("../img/bike-mobile@1x.jpg");
+    min-height: 390px;
+  }
+
+  @media (max-width: 767px) and (min-resolution: 2dppx) {
+    background-image: url("../img/bike-mobile@2x.jpg");
+  }
+}
+
+
 .promo__wrapper {
   width: 100%;
-  padding: 0 20%;
+  padding: 0 18%;
   display: grid;
   grid-template-rows: min-content min-content min-content;
   grid-template-columns: 1fr 0.8fr;
   margin-top: 183px;
-  grid-column-gap: 150px;
+  grid-column-gap: 50px;
 
   @media (max-width: 1023px) {
     display: flex;
@@ -13,13 +46,14 @@
     align-items: center;
     padding: 0 10%;
     width: 100%;
-    margin-top: 83px;
+    margin-top: 155px;
+    position: relative;
   }
 
   @media (max-width: 767px) {
     width: 100%;
-    padding: 2% 3%;
-    margin-top: 65px;
+    padding: 0 3%;
+    margin-top: 149px;
   }
 }
 
@@ -42,8 +76,8 @@
   @include opensans-bold;
   display: block;
   margin: 0 0 23px;
-  padding: 97px 3px 0;
-  width: 100%;
+  padding-top: 97px;
+  width: 110%;
   grid-row: 2 / 3;
   grid-column: 1 / 2;
 
@@ -82,7 +116,7 @@
     font-size: 18px;
     line-height: 32px;
     margin: 0;
-    max-width: 75%;
+    max-width: 67%;
     transform: translate(-3px, 0);
   }
 
@@ -97,13 +131,16 @@
   grid-column: 2 / 3;
   margin: 0;
   padding: 58px 0 0;
+  justify-self: flex-end;
 
   @media (max-width: 1023px) {
-    padding: 140px 0 0;
+    position: absolute;
+    bottom: -362px;
+    padding: 0;
   }
 
   @media (max-width: 767px) {
-    padding: 134px 0 0;
+    bottom: -409px;
   }
 }
 
