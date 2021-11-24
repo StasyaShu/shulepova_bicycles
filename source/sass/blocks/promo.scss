@@ -33,12 +33,12 @@
 
 .promo__wrapper {
   width: 100%;
-  padding: 0 9%;
+  padding: 0 7%;
   display: grid;
   grid-template-rows: min-content min-content min-content;
-  grid-template-columns: 0.3fr 0.3fr;
-  margin-top: 183px;
-  grid-column-gap: 50px;
+  grid-template-columns: 0.4fr 0.3fr;
+  margin-top: 246px;
+  grid-column-gap: 25px;
   justify-content: center;
 
   @media (max-width: 1023px) {
@@ -62,7 +62,7 @@
   grid-row: 1 / 2;
   grid-column: 1 / 2;
   padding: 0;
-  transform: translate(6px, 64px);
+  transform: translate(9px, 68px);
 
   @media (max-width: 1023px) {
     display: none;
@@ -76,11 +76,12 @@
 
   @include opensans-bold;
   display: block;
-  margin: 0 0 23px;
+  margin: 0 0 19px;
   padding-top: 97px;
   width: 110%;
   grid-row: 2 / 3;
   grid-column: 1 / 2;
+  transform: translate(10px, 2px);
 
   @media (max-width: 1023px) {
     padding: 0;
@@ -105,7 +106,7 @@
 
   @include opensans-light;
   margin: 0;
-  padding: 0 6px;
+  padding: 0 9px;
   display: block;
   width: 89%;
   grid-row: 3 / 4;
@@ -131,8 +132,9 @@
   grid-row: 1 / -1;
   grid-column: 2 / 3;
   margin: 0;
-  padding: 58px 0 0;
+  padding: 61px 0 0;
   justify-self: flex-end;
+  transform: translate(50px, -10px);
 
   @media (max-width: 1023px) {
     position: absolute;

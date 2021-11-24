@@ -33,7 +33,7 @@
   color: $black-title;
   margin: 0 0 30px;
   padding: 0;
-  transform: translate(6px, 1px);
+  transform: translate(33px, 1px);
 
   @include opensans-semibold;
   display: block;
@@ -57,7 +57,7 @@
   line-height: 31px;
   color: $black;
   opacity: 0.7;
-  transform: translate(6px, 1px);
+  transform: translate(33px, 1px);
 
   @include opensans-regular;
   margin: 0 0 42px;
@@ -81,9 +81,10 @@
 
 .location__wrapper iframe {
   background-color: $grey-bg-map;
-  width: 100%;
+  width: 106%;
   height: 530px;
   margin-bottom: 15px;
+  transform: translate(34px, 0);
 
   @media (max-width: 767px) {
     position: absolute;

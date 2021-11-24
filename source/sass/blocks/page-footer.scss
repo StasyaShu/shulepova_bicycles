@@ -5,7 +5,7 @@
 
 .page-footer__wrapper {
   width: 100%;
-  padding: 0 26%;
+  padding: 0 27%;
 
   @media (max-width: 1023px) {
     padding: 0 5%;
@@ -19,6 +19,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  transform: translate(22px, 0);
 
   @media (max-width: 767px) {
     display: flex;
