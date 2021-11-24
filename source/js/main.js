@@ -26,7 +26,10 @@ const handleMobileMenu = (() => {
           siteNavigation.classList.toggle('main-nav--opened');
           body.style.overflow = 'hidden';
           siteNavigation.classList.toggle('main-nav--closed');
-          body.style.overflow = 'scroll';
+
+          if (siteNavigation.classList.contains('main-nav--closed')) {
+            body.style.overflow = 'scroll';
+          }
         })
       }
     },
