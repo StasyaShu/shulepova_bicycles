@@ -47,7 +47,7 @@
     align-items: center;
     padding: 0 10%;
     width: 100%;
-    margin-top: 155px;
+    margin-top: 134px;
     position: relative;
   }
 
@@ -89,7 +89,6 @@
     text-align: center;
     font-size: 30px;
     line-height: 42px;
-    transform: translate(-3px, 0);
   }
 
   @media (max-width: 767px) {
@@ -120,7 +119,7 @@
     line-height: 32px;
     margin: 0;
     max-width: 67%;
-    transform: translate(-3px, 0);
+    transform: translateX(0);
   }
 
   @media (max-width: 767px) {
@@ -139,7 +138,7 @@
 
   @media (max-width: 1023px) {
     position: absolute;
-    bottom: -362px;
+    bottom: -415px;
     padding: 0;
   }
 
