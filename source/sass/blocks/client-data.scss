@@ -18,15 +18,22 @@
   border: 1px solid $grey-input-border;
   border-radius: 5px;
   padding: 15px 18px;
+  transition: all 0.3s ease-in;
 
   @include opensans-regular;
 
   &:hover {
     border: 1px solid $black-input;
+    transition: all 0.3s ease-in;
+    outline: 0;
+    outline-offset: none;
   }
 
   &:focus {
     border: 1px solid $green;
+    outline: 0;
+    outline-offset: none;
+    transition: all 0.3s ease-in;
   }
 }
 

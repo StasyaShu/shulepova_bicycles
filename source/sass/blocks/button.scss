@@ -5,17 +5,20 @@
   font-size: 15px;
   line-height: 21px;
   color: $black;
+  transition: all 0.3s ease-in;
 
   @include opensans-semibold;
 
   &:hover {
     background-color: $mint-dark;
     color: $white;
+    transition: all 0.3s ease-in;
   }
 
   &:active {
     color: $black-pale;
     background-color: $mint-total-dark;
+    transition: all 0.3s ease-in;
   }
 }
 
@@ -26,9 +29,11 @@
   background-color: $mint;
   cursor: pointer;
   position: relative;
+  transition: all 0.3s ease-in;
 
   &:active {
     box-shadow: 0 0 5px 2px $white;
+    transition: all 0.3s ease-in;
   }
 
   @media (max-width: 1023px) {
@@ -52,6 +57,7 @@
   border-top: 10px solid transparent;
   border-left: 15px solid $black-btn-play;
   border-bottom: 10px solid transparent;
+  transition: all 0.3s ease-in;
 
   @media (max-width: 1023px) {
     border-top: 13px solid transparent;
@@ -72,4 +78,5 @@
 
 .button--play:hover::before {
   border-left: 15px solid $white;
+  transition: all 0.3s ease-in;
 }

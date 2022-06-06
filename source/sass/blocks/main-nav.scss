@@ -124,6 +124,7 @@
   cursor: pointer;
   position: relative;
   display: flex;
+  transition: all 0.3s ease-in;
 
   @media (max-width: 1023px) {
     font-size: 20px;
@@ -137,10 +138,12 @@
   &:hover {
     color: $mint;
     opacity: 1;
+    transition: all 0.3s ease-in;
   }
 
   &:active {
     color: $mint-pale;
+    transition: all 0.3s ease-in;
   }
 
   &--active {
@@ -160,6 +163,7 @@
     border-top: transparent;
     border-left: transparent;
     transform: rotate(-45deg);
+    transition: all 0.3s ease-in;
   }
 }
 
@@ -167,12 +171,14 @@
   border-right: 2px solid $mint;
   border-bottom: 2px solid $mint;
   transform: rotate(-45deg);
+  transition: all 0.3s ease-in;
 }
 
 .main-nav__link:active::after {
   border-right: 2px solid $mint-pale;
   border-bottom: 2px solid $mint-pale;
   transform: rotate(-45deg);
+  transition: all 0.3s ease-in;
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -186,20 +192,24 @@
     box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
     top: 16px;
     left: 10px;
+    transition: all 0.3s ease-in;
   }
 }
 
 .main-nav--closed .main-nav__toggle:hover {
   background-color: $mint-dark;
+  transition: all 0.3s ease-in;
 }
 
 .main-nav--closed .main-nav__toggle:active {
   background-color: $mint-total-dark;
+  transition: all 0.3s ease-in;
 }
 
 .main-nav--closed .main-nav__toggle:hover::before {
   background-color: $white;
   box-shadow: 0 8px 0 0 $white, 0 16px 0 0 $white;
+  transition: all 0.3s ease-in;
 }
 
 .main-nav--closed .main-nav__toggle:active::before {
@@ -211,6 +221,7 @@
   @media (max-width: 1023px) {
     background-color: $white;
     margin-bottom: 50px;
+    transition: all 0.3s ease-in;
   }
 }
 
@@ -224,6 +235,7 @@
     height: 1px;
     background-color: $close-button;
     transform: rotate(45deg);
+    transition: all 0.3s ease-in;
   }
 }
 
@@ -237,24 +249,28 @@
     height: 1px;
     background-color: $close-button;
     transform: rotate(-45deg);
+    transition: all 0.3s ease-in;
   }
 }
 
 .main-nav--opened .main-nav__toggle:hover::before {
   @media (max-width: 1023px) {
     background-color: $mint;
+    transition: all 0.3s ease-in;
   }
 }
 
 .main-nav--opened .main-nav__toggle:hover::after {
   @media (max-width: 1023px) {
     background-color: $mint;
+    transition: all 0.3s ease-in;
   }
 }
 
 .main-nav--opened .main-nav__toggle:active::before {
   @media (max-width: 1023px) {
     opacity: 0.5;
+    transition: all 0.3s ease-in;
   }
 }
 
